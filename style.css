@@ -70,6 +70,7 @@ body{
     margin: 0 8px;
     transition: .5s ease;
     margin-top: 30px;
+    text-decoration: none;
 }
 .social-icons a:hover{
     color: var rgb(241, 241, 241);
@@ -79,8 +80,8 @@ body{
     transition: .5s ease;
 }
 .button:hover {
-    box-shadow:0 0 10px orange;
-    background-color: black;
+    box-shadow:0 0 10px black;
+    background-color: var(--bg-color);
     color: orange;
     transition: .5s ease;
 }
@@ -94,6 +95,7 @@ body{
     border-radius: 20px;
     transition: .5s ease;
     margin-top: 50px;
+    text-decoration: none;
 } 
 .Gmbr1{
     border-radius: 100%;
@@ -141,7 +143,7 @@ body{
     width: 300px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 20px orange;
+    box-shadow: 0 4px 20px black;
     transition: 0.3s ease, box-shadow 0.3s ease;
     justify-content: center
 }
