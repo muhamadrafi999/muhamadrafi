@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+  
+    margin: 0;
+    padding: 0;
+    background-color: #faeebc;
+  }
+  
+  h2,
+  h3,
+  h4 {
+    color: #756318
+  }
+  
+  footer {
+    padding: 20px;
+    color: #faeebc;
+    background-color: #756318;
+  
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #faeebc;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #e4c54b;
+    transform: translateY(-3px); /* Efek naik sedikit saat hover */
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #978127; /* Warna underline kuning */
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #ffdd57; /* Warna underline kuning */
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+}
+
+nav {
+    background: linear-gradient(135deg, #756318, #bea028); /* Gradient background */
+    padding: 10px 0; /* Padding lebih besar */
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow lebih tebal */
+    z-index: 1000; /* Pastikan navbar selalu di atas */
+}
+
+/* Efek hover pada li */
+nav li {
+    transition: transform 0.3s ease;
+}
+
+nav li:hover {
+    transform: scale(1.1); /* Sedikit membesar saat hover */
+}
+
+/* Animasi saat halaman di-load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    animation: fadeIn 0.8s ease-out; /* Animasi muncul saat halaman di-load */
+}
+  
+  .profile header {
+    text-align: center;
+  }
+  
+  .featured-image {
+    width: 100%;
+    max-height: 650px;
+    border-radius: 15px;
+  
+    object-fit: cover;
+    object-position: center;
+  }
+  .image {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 15px;
+    object-position: center;
+  }
+  .image2{
+    width: 400px;
+    max-height: 400px;
+    border-radius: 15px;
+  
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+  }
+  .profile img {
+    max-width: 200px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  
+    padding: 60px;
+    margin-top: 25px;
+  }
+  
+  .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #bea028;
+    text-align: center;
+    color: #faeebc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+}
+
+.jumbotron h1 {
+  background: linear-gradient(45deg, #ffffff, #f1c40f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jumbotron h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.jumbotron h1 {
+  -webkit-text-stroke: 1px black; /* Outline teks */
+  color: white;
+}
+
+.jumbotron h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #bea028;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.jumbotron p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+  
+  main {
+    padding: 20px;
+    display: flex;
+  
+    overflow: auto;
+    gap: 1.5rem;
+  }
+  
+  #content {
+    float: left;
+    width: 75%;
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+  
+  aside {
+    float: right;
+    width: 25%;
+    flex: 1;
+  
+    padding-left: 20px;
+  }
+  
+  header {
+    display: inline;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }

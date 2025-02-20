@@ -1,36 +1,128 @@
-*{
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 5px;
-    background-color: black;
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
-.Project{
-    margin-left: 30px;
-    margin-right: 30px;
-    display: right;
+
+.Project {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
 }
-.merokok{
-    border-radius: 8px;
-    width: 500px;
-    height: 200px;
-}
-h1{
+
+h1 {
     text-align: center;
-    color: brown;
-    transition: .5s ease;
-    transform: scale(1.1);
+    color: #2c3e50;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
 }
-h1:hover{
-    transition: .5s ease;
-    transform: scale(1.1);
-    color: rgb(170, 118, 68);
+
+h3 {
+    text-align: center;
+    color: #34495e;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
-h3{
-    margin-top: 20px;
-    color: brown;
+
+img.merokok {
+    display: block;
+    margin: 0 auto 30px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-ul{
-    font-size: 18px;
-    color: white;
-    justify-content: center;
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e8f0fe;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #d1e3ff;
+    transform: translateY(-3px);
+}
+
+ul li p {
+    font-size: 1em;
+    color: #333;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Specific Styles for List Items */
+ul li:nth-child(odd) {
+    background-color: #e8f0fe;
+}
+
+ul li:nth-child(even) {
+    background-color: #d1e3ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Project {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+
+    ul li p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .Project {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+
+    ul li p {
+        font-size: 0.8em;
+    }
 }
